@@ -9,60 +9,60 @@ import "Query.proto";
 
 message ScheduleReport {
     Report report = 1;
-    ReportLineItem report_line_item = 2;
-    AssignReport assign_report = 3;
+    ReportLineItem reportLineItem = 2;
+    AssignReport assignReport = 3;
     Schedule schedule = 4;
     string query = 5;
     string constraints = 6;
 }
 
 message Report {
-    string userid = 1;
-    string dashboard_name = 2;
-    string view_name = 3;
-    string share_link = 4;
-    string build_url = 5;
-    string mail_body = 6;
+    string userId = 1;
+    string dashboardName = 2;
+    string viewName = 3;
+    string shareLink = 4;
+    string buildUrl = 5;
+    string mailBody = 6;
     string subject = 7;
-    string report_name = 8;
-    string title_name = 9;
+    string reportName = 8;
+    string titleName = 9;
     bool thresholdAlert = 10;
-    string view_id = 11;
+    string viewId = 11;
     string createdDate = 12;
 }
 
 message ReportLineItem {
-    string visualizationid = 1;
-    repeated string dimension = 2;
-    repeated string measure = 3;
-    string visualization = 4;
+    string visualizationId = 1;
+    repeated string dimensions = 2;
+    repeated string measures = 3;
+    string visualizationType = 4;
 }
 
 message AssignReport {
-    repeated string channel = 1;
-    string slack_API_Token = 2;
-    string channel_id = 3;
-    string stride_API_Token = 4;
-    string stride_cloud_id = 5;
-    string stride_conversation_id = 6;
-    CommunicationList communication_list = 7;
+    repeated string channels = 1;
+    string slackAPIToken = 2;
+    string channelId = 3;
+    string strideAPIToken = 4;
+    string strideCloudId = 5;
+    string strideConversationId = 6;
+    CommunicationList communicationList = 7;
 }
 
 message CommunicationList{
-	repeated Email email = 1;
+	repeated Email emails = 1;
 	repeated int32 teams = 2;
 }
 
 message Email {
-    string user_email = 1;
-    string user_name = 2;
+    string userEmail = 1;
+    string userName = 2;
 }
 
 message Schedule {
-    string cron_exp = 1;
+    string cronExp = 1;
     string timezone = 2;
-    string start_date = 3;
-    string end_date = 4;
+    string startDate = 3;
+    string endDate = 4;
 }
 
 message ReportLog {
