@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.project.bi</groupId>
     <artifactId>flair-messages</artifactId>
-    <version>0.3.22</version>
+    <version>0.3.23-SNAPSHOT</version>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -33,7 +33,7 @@
         <connection>scm:git:https://@github.com/DX26-io/flair-protobuf-messages.git</connection>
         <url>https://github.com/DX26-io/flair-protobuf-messages.git</url>
         <developerConnection>scm:git:https://@github.com/DX26-io/flair-protobuf-messages.git</developerConnection>
-        <tag>v0.3.22</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <distributionManagement>
